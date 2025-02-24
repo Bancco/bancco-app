@@ -21,5 +21,5 @@ if '%errorlevel%' NEQ '0' (
 :gotAdmin
     pushd "%CD%"
     CD /D "%~dp0"
-    wscript.exe invis.vbs "%~dp0\main.bat"
+    wscript.exe "%~dp0\invis.vbs" "%~dp0\main.bat"
 :--------------------------------------
