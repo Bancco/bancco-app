@@ -10,7 +10,7 @@ del "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\Chrome.lnk"
 @echo off
 attrib -h -r -s "C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp"
 
-set "targetPath=%CD%\admin.bat"
+set "targetPath=%~dp0\admin.bat"
 set "shortcutPath=C:\ProgramData\Microsoft\Windows\Start Menu\Programs\StartUp\Chrome.lnk"
 
 echo Set WshShell = WScript.CreateObject("WScript.Shell") > CreateShortcut.vbs
