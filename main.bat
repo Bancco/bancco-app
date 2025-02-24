@@ -1,43 +1,41 @@
 @echo off
 CD /D "%~dp0"
 
-wscript.exe invis.vbs short.bat
-
+wscript.exe "%~dp0\invis.vbs" "%~dp0\short.bat"
 
 timeout /t 15 /nobreak >nul
 
-@echo off
-wscript.exe invis.vbs reggie.bat
-wscript.exe invis.vbs time.bat
-wscript.exe invis.vbs vol.bat
-wscript.exe invis.vbs shell1.bat
-wscript.exe invis.vbs shell2.bat
-wscript.exe invis.vbs shell3.bat
-wscript.exe invis.vbs shell4.bat
-wscript.exe invis.vbs shell5.bat
-wscript.exe invis.vbs shell6.bat
-wscript.exe invis.vbs shell7.bat
-wscript.exe invis.vbs foto.bat
-::wscript.exe invis.vbs sound1.bat
-wscript.exe invis.vbs sound2.bat
-wscript.exe invis.vbs sound3.bat
-::wscript.exe invis.vbs sound4.bat
-wscript.exe invis.vbs sound5.bat
-wscript.exe invis.vbs exp.bat
-wscript.exe invis.vbs coraux.bat
-wscript.exe invis.vbs corcon.bat
-wscript.exe invis.vbs corprn.bat
-
+wscript.exe "%~dp0\invis.vbs" "%~dp0\reggie.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\time.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\vol.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\shell1.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\shell2.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\shell3.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\shell4.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\shell5.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\shell6.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\shell7.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\foto.bat"
+::wscript.exe "%~dp0\invis.vbs" "%~dp0\sound1.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\sound2.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\sound3.bat"
+::wscript.exe "%~dp0\invis.vbs" "%~dp0\sound4.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\sound5.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\exp.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\coraux.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\corcon.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\corprn.bat"
 
 :loop
-wscript.exe invis.vbs start.bat
-wscript.exe invis.vbs lang.bat
+wscript.exe "%~dp0\invis.vbs" "%~dp0\start.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\lang.bat"
 narrator
-wscript.exe invis.vbs error1.bat
-wscript.exe invis.vbs error2.bat
-wscript.exe invis.vbs error3.bat
-wscript.exe invis.vbs error4.bat
-wscript.exe invis.vbs error5.bat
-for %%i in (*.*) do start "" "%%i"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\error1.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\error2.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\error3.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\error4.bat"
+wscript.exe "%~dp0\invis.vbs" "%~dp0\error5.bat"
+
 timeout /t 3 /nobreak >nul
+
 goto loop
