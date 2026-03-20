@@ -1,8 +1,8 @@
 # THIS IS A "VIRUS"!
 
-Me and a friend have been experimenting with making a relatively harmless virus for Windows that blares loud sounds and generates funny pop-ups.
+Me and a friend have been experimenting with making a relatively harmless virus for Windows that blares loud sounds and creates funny pop-ups.
 
-It does modify a bunch of registries and bluescreens after some time, so it's not recommended to run it.
+It does modify a bunch of registries, change settings and bluescreens after some time, so it's not recommended to run it, because crashing can harm your PC and all those settings take some time to revert manually.
 
 # How does it work? What does it do?
 
